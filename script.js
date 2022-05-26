@@ -32,78 +32,93 @@
             // Validacion de filas
 
             if("X" == tablero[0] && "X" == tablero[1] && "X" == tablero[2]){
-                winner.innerHTML = "X";
-                //window.location.reload();
+                alert("Gano la X");
+                //winner.innerHTML = "X";
+                window.location.reload();
                 
             } else if("O" == tablero[0] && "O" == tablero[1] && "O" == tablero[2]){
-                winner.innerHTML = "O";
-                //window.location.reload();
+                //winner.innerHTML = "O";
+                alert("Gano la O");
+                window.location.reload();
             }
 
             if("X" == tablero[3] && "X" == tablero[4] && "X" == tablero[5]){
-                winner.innerHTML = "X";
-                //window.location.reload();
+                //winner.innerHTML = "X";
+                alert("Gano la X");
+                window.location.reload();
             } else if("O" == tablero[3] && "O" == tablero[4] && "O" == tablero[5]){
                 winner.innerHTML = "O";
-                //window.location.reload();
+                alert("Gano la O");
+                window.location.reload();
             }
 
             if("X" == tablero[6] && "X" == tablero[7] && "X" == tablero[8]){
-                 winner.innerHTML = "X";
-                //window.location.reload();
+                 //winner.innerHTML = "X";
+                 alert("Gano la X");
+                window.location.reload();
             } else if("O" == tablero[6] && "O" == tablero[7] && "O" == tablero[8]){
-                winner.innerHTML = "O";
-                //window.location.reload();
+                //winner.innerHTML = "O";
+                alert("Gano la O");
+                window.location.reload();
             }
 
             //Validacion de columnas
 
             if("X" == tablero[0] && "X" == tablero[3] && "X" == tablero[6]){
-                winner.innerHTML = "X";
-                //window.location.reload();
+                //winner.innerHTML = "X";
+                alert("Gano la X");
+                window.location.reload();
             } else if("O" == tablero[0] && "O" == tablero[3] && "O" == tablero[6]){
-                winner.innerHTML = "O";
-                //window.location.reload();
+                //winner.innerHTML = "O";
+                alert("Gano la O");
+                window.location.reload();
             }
 
             if("X" == tablero[1] && "X" == tablero[4] && "X" == tablero[7]){
-                winner.innerHTML = "X";
+                //winner.innerHTML = "X";
                 //window.location.reload();
             } else if("O" == tablero[1] && "O" == tablero[4] && "O" == tablero[7]){
-                winner.innerHTML = "O";
-                //window.location.reload();
+                //winner.innerHTML = "O";
+                alert("Gano la O");
+                window.location.reload();
             }
 
             if("X" == tablero[2] && "X" == tablero[5] && "X" == tablero[8]){
-                winner.innerHTML = "X";
-                //window.location.reload();
+                //winner.innerHTML = "X";
+                alert("Gano la X");
+                window.location.reload();
             } else if("O" == tablero[2] && "O" == tablero[5] && "O" == tablero[8]){
-                winner.innerHTML = "O";
-                //window.location.reload();
+                //winner.innerHTML = "O";
+                alert("Gano la O");
+                window.location.reload();
             }
 
             //Validacion de diagonales
 
             if("X" == tablero[0] && "X" == tablero[4] && "X" == tablero[8]){
-                winner.innerHTML = "X";
-                //window.location.reload();
+                //winner.innerHTML = "X";
+                alert("Gano la X");
+                window.location.reload();
             } else if("O" == tablero[0] && "O" == tablero[4] && "O" == tablero[8]){
-                winner.innerHTML = "O";
-                //window.location.reload();
+                //winner.innerHTML = "O";
+                alert("Gano la O");
+                window.location.reload();
             }
 
             if("X" == tablero[2] && "X" == tablero[4] && "X" == tablero[6]){
-                winner.innerHTML = "X";
-                //window.location.reload();
+                //winner.innerHTML = "X";
+                alert("Gano la X");
+                window.location.reload();
             } else if("O" == tablero[2] && "O" == tablero[4] && "O" == tablero[6]){
-                winner.innerHTML = "O";
-                //window.location.reload();
+                //winner.innerHTML = "O";
+                alert("Gano la O");
+                window.location.reload();
             }
         }else{
 
-            //Validacion empate
-
-                winner.innerHTML = "Empate!";
+                 alert("Empate!");
+                 window.location.reload();
+                //winner.innerHTML = "Empate!";
             }
         
     }
