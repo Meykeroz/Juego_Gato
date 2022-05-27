@@ -14,10 +14,12 @@
                 tablero[cell]=document.getElementById(cell).innerHTML = "X";
                 turn = "O";
                 document.getElementById("player").innerHTML = turn;
+                
             }else{
                 tablero[cell]=document.getElementById(cell).innerHTML = "O";
                 turn = "X";
                 document.getElementById("player").innerHTML = turn;
+                
             }
             validation();
         }
@@ -28,7 +30,7 @@
         var winner=document.getElementById("winner");
 
         if (plays < 9)
-        {
+         {
             // Validacion de filas
 
             if("X" == tablero[0] && "X" == tablero[1] && "X" == tablero[2]){
@@ -43,11 +45,11 @@
             }
 
             if("X" == tablero[3] && "X" == tablero[4] && "X" == tablero[5]){
-                //winner.innerHTML = "X";
                 alert("Gano la X");
+                //winner.innerHTML = "X";
                 window.location.reload();
             } else if("O" == tablero[3] && "O" == tablero[4] && "O" == tablero[5]){
-                winner.innerHTML = "O";
+                //winner.innerHTML = "O";
                 alert("Gano la O");
                 window.location.reload();
             }
@@ -76,7 +78,8 @@
 
             if("X" == tablero[1] && "X" == tablero[4] && "X" == tablero[7]){
                 //winner.innerHTML = "X";
-                //window.location.reload();
+                alert("Gano la X");
+                window.location.reload();
             } else if("O" == tablero[1] && "O" == tablero[4] && "O" == tablero[7]){
                 //winner.innerHTML = "O";
                 alert("Gano la O");
@@ -115,11 +118,10 @@
                 window.location.reload();
             }
         }else{
-
                  alert("Empate!");
                  window.location.reload();
-                //winner.innerHTML = "Empate!";
-            }
+                 //winner.innerHTML = "Empate!";
+             }
         
     }
 
