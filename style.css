@@ -8,10 +8,10 @@ body{
     background-repeat:no-repeat ;
 
 }
-
 h1{
+    margin: 15px;
     text-align: center;
-    font-size: 80px;
+    font-size: 60px;
 }
 .container{
     display: flex;
@@ -40,7 +40,6 @@ h1{
     border-left: 5px solid black;
 }
 .div{
-    box-sizing: content-box;
     font-size: 200px; 
     display: flex;
     justify-content: center;
@@ -48,6 +47,14 @@ h1{
 
     min-height: 200px;  
     color: white;
+}
+.div:hover{
+    background: rgba(220, 220, 201, 0.489);
+    border-radius: 8px;
+}
+.div:active{
+    background: rgba(147, 147, 134, 0.489);
+    border-radius: 8px;
 }
 .container-game{
     width: 100%;
@@ -58,11 +65,31 @@ h1{
     border: 0;
   
 }
-label{
-    margin: 41px;
-    text-align: center;
-    display: block;
-    font-size: 60px;
+footer{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+#label{
+    margin-top: 50px;
+}
+label{
+    font-size: 60px;
+    height: 80px;
+}
+button{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+button:hover{
+    background: rgba(239, 239, 234, 0.814);
+}
+button:active{
+    background: rgba(244, 244, 238, 0.489);
+}
+
 
 

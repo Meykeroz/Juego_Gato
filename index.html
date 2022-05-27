@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Gato!</title>
 </head>
-<body>
+<body> 
+    <div></div>
     <header>
         <h1>Gato!</h1> 
     </header>
@@ -24,11 +25,11 @@
                 <div class="div" id="8" onclick="game('8')"></div>
             </div>
         </div>
-        <label for="" >Turno del jugador<br>
-                 <span id="player"></span>
-        </label>
-        <!-- <label for="" >Ganador: <span id="winner"></span>
-        </label> -->
+        <footer>
+            <label for="" id="label">Turno del jugador</label>
+            <label id="player"></label>
+            <button onclick="reload()">Reiniciar</button>
+         </footer>
 
         <script src="./script.js"></script>
 </body>
