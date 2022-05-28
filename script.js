@@ -14,17 +14,17 @@
                 console.log("No puede ingresar");
             }else{
                 if (turn == "X") {
+                    plays++;
                     tablero[cell]=document.getElementById(cell).innerHTML = "X";
                     turn = "O";
                     document.getElementById("player").innerHTML = turn;
                     validation();
-                    plays++;
                 }else{
+                    plays++;
                     tablero[cell]=document.getElementById(cell).innerHTML = "O";
                     turn = "X";
-                    document.getElementById("player").innerHTML = turn;
+                    document.getElementById("player").innerHTML = turn; 
                     validation();
-                    plays++;
                 }     
             } 
          }else{
@@ -33,9 +33,7 @@
     }
 
     function validation(){
-
             // Validacion de filas
-
             if("X" == tablero[0] && "X" == tablero[1] && "X" == tablero[2]){
                 //alert("Gano la X");
                 //winner.innerHTML = "X";
@@ -123,12 +121,13 @@
                 document.getElementById("player").innerHTML = "O";
                 winner=true;
             }
-        if(plays == 9){
-            document.getElementById("label").style.background = "yellow";
-            document.getElementById("label").innerHTML = "Empate!";
-            document.getElementById("player").innerHTML = " ";
-        }
-     }   
+            if (plays == 9 && winner== false) {
+                document.getElementById("label").style.background = "yellow";
+                document.getElementById("label").innerHTML = "Empate!";
+                document.getElementById("player").innerHTML = " ";
+                
+            }
+         }
     
     function reload(){
         window.location.reload();
